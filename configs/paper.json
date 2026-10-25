@@ -1,0 +1,29 @@
+{
+  "method": "MoIF",
+  "text_encoder": "roberta-large",
+  "text_features": 1024,
+  "max_text_length": 64,
+  "text_finetuned": true,
+  "hidden_dim": 128,
+  "dropout": 0.1,
+  "pair_attention_heads": 8,
+  "directional_weights": [0.5, 0.5],
+  "aggregation": "uniform mean of eligible subset predictions",
+  "loss": "L1(aggregate, target) + 0.1 * mean subset L1",
+  "optimizer": "AdamW",
+  "batch_size": 32,
+  "learning_rate": 0.00001,
+  "weight_decay": 0.0001,
+  "max_epochs": 40,
+  "minimum_epochs": 20,
+  "patience": 20,
+  "scheduler": "CosineAnnealingLR",
+  "eta_min": 0.0000001,
+  "gradient_clip": 1.0,
+  "checkpoint_selection": "minimum validation MAE",
+  "datasets": {
+    "urfunny": {"input_dims": [1024, 81, 371], "seeds": [7, 22, 42, 93, 99]},
+    "mosi": {"input_dims": [1024, 5, 20], "seeds": [22, 42, 93, 123, 456]},
+    "mosei": {"input_dims": [1024, 74, 35], "seeds": [22, 42, 93, 123, 456]}
+  }
+}
