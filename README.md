@@ -1,7 +1,9 @@
 # MoIF
 Official implementation of MoIF: Möbius Interaction Filtering with order-selective spectral regularization for multimodal humor detection.
 
-**Paper:** *Möbius Interaction Filtering: Order-Selective Spectral Regularization for Multimodal Humor Detection*
+**Paper:** *[Möbius Interaction Filtering: Order-Selective Spectral Regularization for Multimodal Humor Detection](https://arxiv.org/abs/2611.12913)*
+
+[arXiv:2611.12913](https://arxiv.org/abs/2611.12913) | [PDF](https://arxiv.org/pdf/2611.12913) | [DOI](https://doi.org/10.48550/arXiv.2611.12913)
 
 **Authors:** Jiahao Qin and Yiwen Wang
 
@@ -125,3 +127,23 @@ machine-specific paths and unrelated experiment infrastructure. See
 The public interface supports user-selected data and pretrained-model locations;
 network dimensions, directional weighting, loss, and evaluation definitions are
 unchanged. Third-party libraries remain subject to their respective licenses.
+
+## Citation
+
+If you use MoIF in your research, please cite our paper:
+
+```bibtex
+@misc{qin2026moif,
+  title         = {{M{\"o}bius Interaction Filtering: Order-Selective Spectral Regularization for Multimodal Humor Detection}},
+  author        = {Jiahao Qin and Yiwen Wang},
+  year          = {2026},
+  eprint        = {2611.12913},
+  archivePrefix = {arXiv},
+  primaryClass  = {cs.MM},
+  doi           = {10.48550/arXiv.2611.12913},
+  url           = {https://arxiv.org/abs/2611.12913}
+}
+```
+
+The repository also provides [CITATION.cff](CITATION.cff) for GitHub's
+**Cite this repository** feature.
